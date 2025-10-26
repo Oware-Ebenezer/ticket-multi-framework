@@ -43,7 +43,7 @@
 
 <script setup>
 import Footer from "../components/AppFooter.vue";
-// import Navbar from "../components/Navbar.vue";
+import Navbar from "../components/Nav-bar.vue";
 // import heroWave from "/assets/wavy.svg";
 
 const weOffer = [
