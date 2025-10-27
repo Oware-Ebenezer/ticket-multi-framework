@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OKICKET</title>
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+    <header class="navbar">
+  <div class="nav-container">
+    <h1 class="nav-logo">OKICKET</h1>
+
+    <nav class="nav-links">
+      <a href="/auth/login" class="nav-link">Login</a>
+      <a href="/auth/signup" class="nav-link nav-primary">Get Started</a>
+    </nav>
+
+    <!-- Hamburger Button -->
+    <button class="nav-toggle" id="nav-toggle">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Dropdown -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="/auth/login" class="mobile-link">Login</a>
+    <a href="/auth/signup" class="mobile-link primary">Get Started</a>
+  </div>
+</header>
+
+
+    <main>
+      <section class="hero">
+        <div class="decor-circle circle-blue"></div>
+        <div class="decor-circle circle-orange"></div>
+
+        <div class="hero-content">
+          <h1>Simplify Your <span>Ticket Management</span></h1>
+          <p>
+            Manage, track, and resolve tickets differently with a sleek and
+            secure web app.
+          </p>
+
+          <div class="cta-group">
+            <a href="/auth/signup" class="cta-primary">Get Started</a>
+            <a href="/auth/login" class="cta-secondary">Login</a>
+          </div>
+        </div>
+
+        <img src="/public/wave.svg" alt="Wavy background" class="wave" />
+      </section>
+
+      <section class="features">
+        <div class="feature">
+          <h3>Create Tickets</h3>
+          <p>
+            Easily create and submit tickets for any issues or requests.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Track Progress</h3>
+          <p>
+            Monitor open, in-progress, and resolved tickets in real time.
+          </p>
+        </div>
+        <div class="feature">
+          <h3>Stay Notified</h3>
+          <p>Receive instant updates on ticket status changes.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 OKICKET. All rights reserved.</p>
+    </footer>
+</main>
+    <script>
+  const toggleBtn = document.getElementById("nav-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  toggleBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+    toggleBtn.classList.toggle("open");
+  });
+</script>
+
+  </body>
+</html>
