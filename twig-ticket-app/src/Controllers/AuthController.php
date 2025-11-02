@@ -62,7 +62,11 @@ class AuthController
             'password' => password_hash($password, PASSWORD_DEFAULT)
         ];
 
-        $this->store->addUser($newUser);
+        // append new user to the loaded users and persist the JSON file directly
+        $users[] = $newUser;
+        $file = __DIR__ . '/../public/users.json';
+        file_put_contents($file, json_encode($users, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+
         $_SESSION['user'] = $newUser;
 
         return $response->withHeader('Location', '/dashboard')->withStatus(302);

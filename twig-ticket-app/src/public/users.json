@@ -1,12 +1,7 @@
 [
     {
-        "name": "Smith",
+        "name": "Eben",
         "email": "me@gmail.com",
-        "password": "$2y$10$w03qE8Xr70Ohwj3AJ43QbeMWdZWdsY0k1exuLjSwuLwhNi7uWbHPC"
-    },
-    {
-        "name": "Smith",
-        "email": "we@gmail.com",
-        "password": "$2y$10$DFWXq6j0tTO0od0xivCpZ.Oo\/XaIg3JA1XMKTXoye0IOmZhHH3i1a"
+        "password": "$2y$10$IksPlUaNao7tpA48IXFh5enWo/6X8PXxoHS1Xw7Vqwdjb6p0oeAK."
     }
 ]
